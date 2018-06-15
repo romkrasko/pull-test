@@ -50,9 +50,9 @@ public class NavigationTest extends BaseTest {
         String actualMarketPageTitle = marketPage.getMarketPageTitle();
         Assert.assertEquals(actualMarketPageTitle, "Яндекс.Маркет — выбор и покупка товаров из проверенных интернет-магазинов");
         driver.get("https://www.yandex.by/");
-        mainPage.clickTranslaitorButton();
-        String actualTranslaitorPageUrl = translatorPage.getTranslaitorPageUrl();
-        Assert.assertEquals(actualTranslaitorPageUrl, "https://translate.yandex.by/");
+        mainPage.clickTranslatorButton();
+        String actualTranslatorPageUrl = translatorPage.getTranslatorPageUrl();
+        Assert.assertEquals(actualTranslatorPageUrl, "https://translate.yandex.by/");
         driver.get("https://www.yandex.by/");
         mainPage.clickMusicButton();
         String actualMusicPageUrl = musicPage.getMusicPageUrl();

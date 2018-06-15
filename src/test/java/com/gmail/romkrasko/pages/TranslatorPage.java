@@ -10,7 +10,7 @@ public class TranslatorPage {
     }
     public WebDriver driver;
 
-    public String getTranslaitorPageUrl(){
+    public String getTranslatorPageUrl(){
         String translatorPageUrl = driver.getCurrentUrl();
         return translatorPageUrl;
     }

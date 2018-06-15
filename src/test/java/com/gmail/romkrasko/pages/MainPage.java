@@ -12,7 +12,6 @@ public class MainPage {
     public WebDriver driver;
 
     @FindBy (css = ".desk-notif-card__login-title a:nth-child(1)")
-    //@FindBy (xpath = "//div[@class='desk-notif-card__login-title']/a[1]")
     public WebElement mailButton;
 
     @FindBy(css = ".home-arrow__tabs div a:nth-child(1)")
@@ -31,7 +30,7 @@ public class MainPage {
     public WebElement marketButton;
 
     @FindBy(css = ".home-arrow__tabs div a:nth-child(6)")
-    public WebElement translaitorButton;
+    public WebElement translatorButton;
 
     @FindBy(css = ".home-arrow__tabs div a:nth-child(7)")
     public WebElement musicButton;
@@ -76,8 +75,8 @@ public class MainPage {
         marketButton.click();
     }
 
-    public void clickTranslaitorButton(){
-        translaitorButton.click();
+    public void clickTranslatorButton(){
+        translatorButton.click();
     }
 
     public void clickMusicButton(){

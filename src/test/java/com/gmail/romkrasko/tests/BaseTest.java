@@ -16,7 +16,6 @@ public class BaseTest {
 
     @AfterClass
     protected void tearDown() {
-        if (driver != null)
-            driver.quit();
+        BrowserFactory.falling();
     }
 }

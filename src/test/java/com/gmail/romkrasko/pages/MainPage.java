@@ -1,5 +1,6 @@
 package com.gmail.romkrasko.pages;
 
+import com.gmail.romkrasko.core.WaiterClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,7 +11,7 @@ public class MainPage {
         this.driver = driver;
     }
     public WebDriver driver;
-
+WaiterClass waiter = new WaiterClass();
     @FindBy (css = ".desk-notif-card__login-title a:nth-child(1)")
     public WebElement mailButton;
 
@@ -51,6 +52,7 @@ public class MainPage {
     }
 
     public String getEnglishLanguageLabel(){
+        waiter.WaitUntilElementIsEnable(changeLanguageButton);
         String languageButton = changeLanguageButton.getText();
         return languageButton;
     }

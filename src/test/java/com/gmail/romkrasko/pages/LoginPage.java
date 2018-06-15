@@ -1,5 +1,7 @@
 package com.gmail.romkrasko.pages;
 
+import com.gmail.romkrasko.core.WaiterClass;
+import com.gmail.romkrasko.tests.BaseTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,6 +13,7 @@ public class LoginPage {
         this.driver = driver;
     }
     public WebDriver driver;
+    WaiterClass waiter = new WaiterClass();
 
     @FindBy(name = "login")
     public WebElement loginInput;
@@ -46,6 +49,7 @@ public class LoginPage {
     }
 
     public String getUserName(){
+        waiter.WaitUntilElementIsEnable(userName);
         String nameUser = userName.getText();
         return nameUser;
     }

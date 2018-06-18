@@ -1,6 +1,5 @@
 package com.gmail.romkrasko.tests;
 
-import com.gmail.romkrasko.core.WaiterClass;
 import org.openqa.selenium.WebDriver;
 import com.gmail.romkrasko.core.BrowserFactory;
 import org.testng.annotations.AfterClass;
